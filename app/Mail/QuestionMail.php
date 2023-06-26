@@ -34,7 +34,7 @@ class QuestionMail extends Mailable
     public function envelope()
     {
         return new Envelope(
-            from: new Address("contact@halalcorrect.com", $this->question->name),
+            from: new Address("smtp@halalqmscenter.net", $this->question->name),
             subject: 'Question Mail',
         );
     }

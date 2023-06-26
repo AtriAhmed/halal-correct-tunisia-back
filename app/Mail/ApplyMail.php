@@ -34,7 +34,7 @@ class ApplyMail extends Mailable
     public function envelope()
     {
         return new Envelope(
-            from: new Address("contact@halalcorrect.com", $this->apply->name),
+            from: new Address("smtp@halalqmscenter.net", $this->apply->name),
             subject: 'Apply Mail',
         );
     }
